@@ -1,4 +1,4 @@
-﻿<!Doctype html>
+<!Doctype html>
 <html>
 <head>
 	<title>Menu CSS jQuery</title>
@@ -19,7 +19,25 @@
 				$(this).find('span').stop().animate({
 					marginTop:"0px"
 				},300);
+			},function(){
+				
+
+
 			});
+			
+			//$('#menu ul li span').css('display','inline');
+			$("body").css("background", "MidnightBlue");
+			$("#menu ul li span").css("background", "yellow");
+			$("#menu ul li span").css("color", "green");
+			$("a").css("color","#00BFFF");
+			//alert('Seja bem-vindo!')
+			
+
+
+			
+			
+			
+
 	});
 	</script>
 
@@ -29,6 +47,7 @@
 		#menu{width:700px;
 			margin:auto;
            	}
+
 		#menu ul{list-style:none;
 			font-size:18px;
 			font-family:"Hobo Std";
@@ -37,6 +56,7 @@
 			height:40px;
 			overflow:hidden;
 			}
+
 		#menu ul li{float:left;
 			}
 		#menu ul li a, #menu ul li span{width:100px;
@@ -55,14 +75,17 @@
 			}
 		#menu ul li a{
 			float:left;
-			background:url("images/Degrade_img.jpg") repeat-x left bottom;
+			background:url("Degrade_img.jpg") repeat-x left bottom;
 			color:#000000;
             height:10px;
 			}
+
+
 	</style>
 </head>
 <body>
 	<div id="menu">
+		
 		<ul>
 			<li><a href="#">Home</a></li>
 			<li><a href="#">Portifólio</a></li>
